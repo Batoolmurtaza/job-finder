@@ -1,0 +1,7 @@
+Django DRF Application Development Flow
+-------------------------------------------------
+
+(1) Create Models
+(2) Create Serializers
+(3) Create Views
+(4) Create URLs

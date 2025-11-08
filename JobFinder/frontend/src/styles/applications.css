@@ -1,0 +1,83 @@
+.applications-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.applications-list {
+  margin-top: 2rem;
+}
+
+.application-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.application-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.application-header h3 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-reviewing {
+  background: #cce5ff;
+  color: #004085;
+}
+
+.status-accepted {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-rejected {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.application-details {
+  color: #666;
+}
+
+.cover-letter {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.no-applications {
+  text-align: center;
+  color: #666;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.error {
+  color: #dc3545;
+  text-align: center;
+  padding: 1rem;
+  background: #f8d7da;
+  border-radius: 8px;
+  margin: 2rem 0;
+}

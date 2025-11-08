@@ -1,0 +1,78 @@
+.preview-container {
+    padding: 1rem;
+}
+
+.preview-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.preview-tag {
+    background: #e9ecef;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.875rem;
+    color: #495057;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-tag {
+    background: #e9ecef;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.875rem;
+    color: #495057;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill-remove {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.form-actions button {
+    flex: 1;
+}
+
+.preview-button {
+    background-color: #6c757d;
+}
+
+.preview-button:hover {
+    background-color: #5a6268;
+}
+
+.draft-button {
+    background-color: #28a745;
+}
+
+.draft-button:hover {
+    background-color: #218838;
+}
+
+.preview-content {
+    white-space: pre-wrap;
+    line-height: 1.5;
+    color: #212529;
+}
