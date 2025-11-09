@@ -4,17 +4,6 @@ from business.models import Business
 # Create your models here.
 
 class Job(models.Model):
-    CATEGORY_CHOICES = [
-        ('Software Development', 'Software Development'),
-        ('Design', 'Design'),
-        ('Marketing', 'Marketing'),
-        ('Sales', 'Sales'),
-        ('Customer Service', 'Customer Service'),
-        ('Finance', 'Finance'),
-        ('Human Resources', 'Human Resources'),
-        ('Management', 'Management'),
-        ('Other', 'Other'),
-    ]
 
     EXPERIENCE_LEVELS = [
         ('Entry Level', 'Entry Level'),
@@ -31,7 +20,7 @@ class Job(models.Model):
     company = models.CharField(max_length=255)
     city = models.CharField(max_length=255)
     is_remote = models.BooleanField(default=False)
-    category = models.CharField(max_length=50, choices=CATEGORY_CHOICES)
+    category = models.ForeignKey(Category, models.CASCADE, related_name="jobs")
     experience_level = models.CharField(max_length=50, choices=EXPERIENCE_LEVELS)
     salary_min = models.DecimalField(max_digits=10, decimal_places=2)
     salary_max = models.DecimalField(max_digits=10, decimal_places=2)

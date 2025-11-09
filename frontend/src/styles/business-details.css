@@ -1,0 +1,62 @@
+.business-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 40px;
+}
+
+.business-details-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 12px;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 4px;
+    display: flex;
+    max-width: 780px;
+    gap: 12px;
+}
+
+.business-details-container h2{
+    margin-bottom: -8px;
+}
+
+.posted-jobs-container{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.posted-jobs-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.job{
+    max-width: 560px;
+    height: 340px;
+    padding: 10px;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.job:hover{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);;
+}
+
+.card-row{
+    display: flex;
+    gap: 12px;
+}
+
+.job-list-container{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}

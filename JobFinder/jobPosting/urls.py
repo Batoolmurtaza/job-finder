@@ -5,4 +5,5 @@ from .views import JobViewSet
 router = DefaultRouter()
 router.register('job', JobViewSet)
 
+
 urlpatterns = router.urls

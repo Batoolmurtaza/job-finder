@@ -5,7 +5,7 @@ from django.conf import settings
 # Create your models here.
 
 class Business(models.Model):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='businesses')
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='business')
     name = models.CharField(max_length=255)
     address = models.TextField()
     phone_number = models.CharField(max_length=20)
