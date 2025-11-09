@@ -53,7 +53,7 @@ function BusinessForm() {
             const isCreated = await postBusiness(payload)
             if (isCreated){
                 console.log("Business created successfully!")
-                navigate("/business")
+                navigate("/")
             }else{
                 console.log("There was a problem creating Business")
                 navigate("/create-business")

@@ -21,7 +21,7 @@ export default function JobCard({ job }) {
           <h3 className="job-title">{job.title}</h3>
           <div className="job-company">{job.company} • {job.city} {job.is_remote ? '• Remote' : ''}</div>
         </div>
-        <div className="job-salary">{job.salary_min ? `$${job.salary_min}` : ''}{job.salary_max ? ` - $${job.salary_max}` : ''}</div>
+        <div className="job-salary">{job.salary_min ? `PKR ${job.salary_min}` : ''}{job.salary_max ? ` - PKR ${job.salary_max}` : ''}</div>
       </div>
 
       <p className="job-desc">{job.description?.slice(0, 220)}{job.description && job.description.length > 220 ? '...' : ''}</p>

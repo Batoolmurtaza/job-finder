@@ -156,8 +156,6 @@ function JobsForm({ route, method }) {
         data.category = matchedCat ? matchedCat.id : category;
       }
 
-      console.log(data);
-
       const is_created = await postJob(business_id, data);
       if (is_created) {
         navigate("/view-business");
